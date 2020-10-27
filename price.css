@@ -1,0 +1,281 @@
+body {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    background-image: url(back.png);
+    background-size: cover;
+}
+
+.top-bar {
+    padding: 2px 0;
+    background: #000000;
+}
+
+.top-bar .tb-contact p {
+    display: inline-block;
+    margin: 0;
+    color: #FF6F61;
+    font-size: 25px;
+}
+
+.top-bar .tb-contact p:first-child {
+    margin-right: 15px;
+}
+
+.top-bar {
+    font-size: 40px;
+    text-align: center;
+}
+
+.top-bar a {
+    color: #FF6F61;
+    font-size: 14px;
+    margin: 0 8px;
+}
+
+.top-bar a:hover {
+    color: #ffffff;
+}
+
+.top-bar a:last-child {
+    margin-right: 0;
+}
+
+.top-bar a::after {
+    position: absolute;
+    content: "/";
+    margin: 1px 0 0 6px;
+    color: #FF6F61;
+    font-size: 14px;
+}
+
+.top-bar a:last-child::after {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .top-bar .tb-contact,
+    {
+        text-align: center;
+    }
+}
+
+.clearfix::after{display:block;clear:both;content:""}
+#OurWork {
+	padding: 45px 0 0;
+}
+#OurWork .filter-box .aaa {
+	width: 33.33%;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	-webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+#OurWork .filter-box .aaa.media {
+	display: block;
+}
+#OurWork .filter-box .scale-anm {
+	transform: scale(1);
+}
+#OurWork .filter-box .aaa .aaa-img img {
+	width: 100%;
+  margin: 30px;
+  padding: 30px;
+	transition: all .2s ease-in;
+  overflow-x: hidden;
+}
+#OurWork .filter-box .aaa:hover .aaa-img img {
+	transition: all .2s ease-in;
+	filter: blur(2px) hue-rotate(-47deg);
+	transform: scale(1.1);
+  overflow-x: hidden;
+}
+#OurWork .filter-box .aaa .aaa-text-wap {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 100%;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: .2s ease-in;
+	transition: .2s ease-in;
+}
+#OurWork .filter-box .aaa:hover .aaa-text-wap {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: .2s all;
+	transition: .2s all;
+}
+#OurWork .filter-box .aaa .aaa-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	width: 100%;
+}
+#OurWork .filter-box .aaa-text h3 {
+	font: 500 26px/115% 'Open Sans', sans-serif;
+	color: #fff;
+	margin: 0 0 30px;
+}
+#OurWork .filter-box .aaa-text p {
+	font: 400 16px/115% 'Open Sans', sans-serif;
+	color: #fff;
+	margin: 0 0 30px;
+}
+#OurWork .filter-box .aaa-text a {
+	display: inline-block;
+	-webkit-transition: .2s all;
+	transition: .2s ease-in;
+}
+#OurWork .filter-box .aaa-text a i {
+	color: #fff;
+	-webkit-transition: .2s all;
+	transition: .2s ease-in;
+	position: relative;
+	left: -15px;
+	font-size: 28px;
+	opacity: 0;
+}
+#OurWork .filter-box .aaa .aaa-text a:hover i {
+	color: #19af83;
+}
+#OurWork .filter-box .aaa:hover .aaa-text a i {
+	-webkit-transition: .25s all;
+	left: 0;
+	opacity: 1;
+	transition: .25s all;
+	font-size: 34px;
+}
+#OurWork .filter-box .aaa-text a:hover {
+	-webkit-transition: .2s all;
+	transition: .2s all;
+}
+button{
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    color: #000;
+    font-size: 20px;
+    min-width: 150px;
+}
+
+.green{
+    background: green;
+    color: #fff;
+}
+
+
+@media (min-width: 1700px) {
+  #OurWork .filter-box {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+#OurWork {
+  padding-top: 35px;
+}
+#OurWork .filter-box .aaa .aaa-text-wap,
+#OurWork .filter-box .aaa-text a i {
+  visibility: visible;
+  opacity: 1;
+}
+#OurWork .filter-box .aaa:hover .aaa-img img {
+  transform: none;
+  overflow-x: hidden;
+}
+#OurWork .filter-box .aaa-text h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+#OurWork .filter-box .aaa-text p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+#OurWork .filter-box .aaa-text a {
+  padding: 11px 16px;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+#OurWork {
+  padding-top: 35px;
+}
+#OurWork .title {
+  width: 100%;
+}
+#OurWork .title h3 {
+  font-size: 28px;
+}
+#OurWork .title p {
+  font-size: 20px;
+}
+#OurWork .filter-box .aaa .aaa-text-wap,
+#OurWork .filter-box .aaa-text a i {
+  visibility: visible;
+  opacity: 1;
+}
+#OurWork .filter-box .aaa:hover .aaa-img img {
+  transform: none;
+  overflow-x: hidden;
+}
+#OurWork .filter-box .aaa-text h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+#OurWork .filter-box .aaa-text p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+#OurWork .filter-box .aaa-text a {
+  padding: 4px 8px;
+}
+#OurWork .filter-box .aaa:hover .aaa-text a i {
+  font-size: 28px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  #OurWork .filter-box .aaa {
+    width: 50%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+#OurWork {
+  padding-top: 20px;
+  background-color: #efefef;
+}
+#OurWork .filter-box .aaa .aaa-text-wap,
+#OurWork .filter-box .aaa-text a i {
+  visibility: visible;
+  opacity: 1;
+}
+#OurWork .filter-box .aaa {
+  width: 100%;
+}
+#OurWork .filter-box .aaa .aaa-text {
+  padding: 8px;
+}
+#OurWork .filter-box .aaa-text h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+#OurWork .filter-box .aaa-text p {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+#OurWork .filter-box .aaa-text a {
+  padding: 4px 8px;
+}
+#OurWork .filter-box .aaa:hover .aaa-img img {
+  transform: none;
+  overflow-x: hidden;
+}
